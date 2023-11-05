@@ -16,34 +16,36 @@
 
 <body>
     <header>
-        <nav class="container">
-            <div class="nav-links">
-                <ul class="nav-links">
-                    <li>
-                        <a id="home" href="#">Home</a>
-                    </li>
-                    <li>
-                        <a id="interaction" href="#">Interactions</a>
-                    </li>
-                    <li>
-                        <a id="insp" href="#">Inspiration</a>
-                    </li>
-                    <li>
-                        <a id="try" href="#">TRY ME!</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-
-
-
+        <div class="container">
+            <ul class="nav-links">
+                <li>
+                    <a id="home" href="#">Home</a>
+                </li>
+                <li>
+                    <a id="interaction" href="#">Interactions</a>
+                </li>
+                <li>
+                    <a id="insp" href="#">Inspiration</a>
+                </li>
+                <li>
+                    <a id="try" href="#">TRY ME!</a>
+                </li>
+            </ul>
+        </div>
 
     </header>
-
-
-
     <main>
+        <!--A section where the user starts to type anything and then my message appears-->
+        <div class="container">
+        <section>
+            <form id="myForm">
+                <input type="text" id="inputField" autocomplete="off" autofocus placeholder="Type anything here">
+                <!--<button type="submit" id="btn">Submit</button>-->
+                <span><h1 id="message" style="display: none;" >Welcome user, you are now entering a world of pixelated shadows and ethereal light.</h1></span>
+            </form>
+        </section>
+        </div>
+       
 
 
 
