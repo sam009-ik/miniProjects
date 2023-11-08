@@ -40,23 +40,7 @@ function handleButton(number) {
 }
 
 function compTurn() {
-    let computerNumber;
-    if (currentSum >= 88) {
-        // If the total sum is 88 or more, choose the number that makes the total sum 92
-        computerNumber = 92 - currentSum;
-    } else if ((currentSum + 8) % 8 === 0) {
-        // If the total sum can be made a multiple of 8, choose the number that makes the sum 8
-        computerNumber = 8 - userTurn[userTurn.length - 1];
-    } else {
-        // Otherwise, choose the number that makes the total sum a multiple of 8
-        computerNumber = (8 - (currentSum % 8)) % 8;
-    }
-    
-    // If the chosen number is outside the 1-7 range, choose 7
-    if (computerNumber < 1 || computerNumber > 7) {
-        computerNumber = 7;
-    }
-
+    let computerNumber = Math.floor( Math.random() * 7) + 1// Computer's number by responding to user's number
     computerTurn.push(computerNumber);    // Add computer's number to the log
     currentSum += computerNumber; 
     sumEl.textContent = `SUM: ${currentSum}`; // Update sum in the DOM
