@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="normal.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        
+
+        <title>Race To 100</title>
+
+    </head>
+    <body>
+        <header>
+        <h1 id="game-title">Race to 100</h1>
+        <h2><em>Can you beat me?</h2></em></h2>
+        </header>
+        <main>
+        <ul class="instructions">
+            <li>Instructions</li>
+            <li>(a) Take turns choosing a number from 1 to 7</li> 
+            <li>(b) The sum increments each time a number is chosen</li>
+            <li>(c) If player A totals the sum to 100 or more on their turn: Player A wins OR vice-versa</li>
+        </ul>
+
+        <div class="start">
+            <p id="computer-logs"></p>
+            <button id="start-btn" onclick="startGame()">START GAME</button>
+            <p id="user-logs"></p>
+
+        </div>
+
+        <h2 id="sum-el">SUM:</h2>
+        
+        <div class="container">
+            <button class="btn" id="one-btn" onclick="handleButton(1)">1</button>
+            <button class="btn" id="two-btn" onclick="handleButton(2)">2</button>
+            <button class="btn" id="three-btn" onclick="handleButton(3)">3</button>
+            <button class="btn" id="four-btn" onclick="handleButton(4)">4</button>
+            <button class="btn" id="five-btn" onclick="handleButton(5)">5</button>
+            <button class="btn" id="six-btn" onclick="handleButton(6)">6</button>
+            <button class="btn" id="seven-btn" onclick="handleButton(7)">7</button>
+
+        </div>
+        </main>
+
+
+
+
+        <script src="./main.js"></script>
+    </body>
+    
+
+
+
+
+
+
+
+
+
+
+</html>
