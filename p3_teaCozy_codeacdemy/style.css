@@ -1,0 +1,148 @@
+
+
+body {
+    color: seashell;
+    background-color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    opacity: 0.8;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid seashell;
+    height: 69px;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 50;
+    background-color: darkslategray;
+   
+}
+
+
+.img-container img {     /*For the image in the header , height should be 50px but seems to be overflowing right now*/
+    height: 50px; /* Fixed height for the logo */
+    padding-left: 10px;
+    display: block; /* This will remove any extra space below the image */
+    
+
+}
+
+.nav-links a {
+    color: seashell;
+    padding-left: auto;
+    padding-right: 20px;
+}
+
+.mission-container {
+    margin-top: 70px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; 
+    display: block;
+}
+
+.mission-container img {
+    width: 100%;
+    display: block;
+    height: auto;
+    margin-bottom: auto;
+}
+
+.text-overlay {
+    position: absolute;  /*Positioned abosulutely to the parent element which is .img-container1*/
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+    height: auto;
+    transform: translate(-50%, -50%); /*tranform and translate allows to move on x and y axis*/
+    background-color: black;
+    text-align: center;
+    display: block;
+    border-top: 2px double white;
+}
+
+.tea-container {
+    width: 1000px;
+    display: block;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+.tea-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 5px; /*creates a gap between the flex items*/
+}
+
+.tea-images figure {
+    width: 300px;
+    margin: 1px;
+}
+
+
+.tea-images img {
+    max-width: 100%;
+    max-height: 200px;
+    padding-bottom: 10px;
+}
+
+.location-container {
+    background-image: url("./resources/img-locations-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    display: block;
+    height: auto;
+    padding-bottom: 10px;
+    padding-top: 1px;
+
+}
+
+.location-container h2 {
+    color: beige;
+    font-weight: 900;
+
+}
+
+.specific-locations {
+    color: white;
+   
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap: 100px;
+    padding: 10px;
+}
+
+.downtown, .bayside, .oakdale {
+    background-color: black;
+    padding: 15px;
+    opacity: 0.9;
+
+}
+
+.contact-container {
+    text-align: center;
+    display: block;
+    font-weight: 800;
+    padding: 10px;
+
+}
+
+.copyright-container {
+    font-size: smaller;
+    padding-left: 20px;
+    margin-left: 2px;
+    text-align: left;
+}
