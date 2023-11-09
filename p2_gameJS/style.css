@@ -100,3 +100,12 @@ div.container {
     font-weight: bolder;
     text-decoration: solid;
 }
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    color: black;
+    background-color: beige;
+    border: 1px solid beige;
+    margin-top: 90px;
+}
