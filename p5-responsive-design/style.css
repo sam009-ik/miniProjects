@@ -1,0 +1,93 @@
+
+/* Universal Selectors */
+html {
+    font-size: 16px;
+}
+
+
+body {
+    font-family: 'Archivo', sans-serif;
+    color: #000;
+    background-color: beige;
+    margin: 0;
+    padding: 1rem;
+}
+
+h2, h3, h4, p {
+    padding: 0.5rem;
+    margin: auto;
+}
+
+a {
+    color: #000;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+/*Header Section*/
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.2rem solid black;
+    position: fixed;
+    width: 100%;
+    height: 150px;
+}
+
+.part-one-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    
+}
+.image-container {
+    width: fit-content;
+    padding: 10px;
+    margin-right: 200px;
+}
+.image-container img {
+    width: 150px;
+    height: 100px;
+}
+
+.part-two-head {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+/* Main */
+.main {
+    display: flex;
+    flex-direction: row;
+    padding-top: 180px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    
+}
+
+.side-el {
+    box-sizing: border-box;
+    border: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    margin-right: 1;
+}
+
+.main-content {
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-image: url("./resources/DALL·E\ 2023-11-23\ 22.11.22\ -\ A\ tranquil\ and\ minimalistic\ background\ image\ representing\ Vipassana\ meditation.\ The\ image\ should\ depict\ a\ serene\ and\ natural\ setting\,\ perhaps\ a\ quiet\ .png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 100px;
+}

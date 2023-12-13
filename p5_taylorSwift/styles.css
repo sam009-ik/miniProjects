@@ -1,0 +1,71 @@
+/*Universal Selectors*/
+html {
+    font-size: 16px;
+
+}
+body {
+  background-color: #f3f4fa;
+  padding: 0.5rem;
+  margin: 0;
+
+}
+
+section {
+  width: 100%;
+  /*max-width: 800px;*/
+  height: 100vh;
+
+}
+
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 40% 60%;
+  grid-gap: 0.5rem;
+
+}
+
+/*Inside the Grid section*/
+.header-box {
+  display: flex;
+  flex-direction:row-reverse;
+  justify-content: flex-end;
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  /*height: 5rem; /* waht does this do?*/
+  /*width: 100%;*/
+
+}
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+/*Inside the Header-Box */
+.heading {
+  display: block;
+  text-align: center;
+  padding-right: 0.75rem;
+  padding: 0.7rem;
+  background-color: #FED0D0;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.image-container{
+  padding: 0.5rem;
+
+ 
+}
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+ 
+  
+
+}
